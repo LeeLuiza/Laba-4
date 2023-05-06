@@ -1,0 +1,36 @@
+{ 
+  "name": "Book",
+  "columns": [
+    {
+      "name": "ID",
+      "type": "int",
+      "isPrimary": true
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "isPrimary": false
+    },
+    {
+      "name": "Author",
+      "type": "string",
+      "isPrimary": false
+    },
+    {
+      "name": "Published",
+      "type": "datetime",
+      "isPrimary": false
+    },
+    {
+      "name": "Cabinetnumber",
+      "type": "int",
+      "referencedTable": "Groups",
+      "isPrimary": false
+    },
+    {
+      "name": "Shelfnumber",
+      "type": "int",
+      "isPrimary": false
+    }
+  ]
+}
